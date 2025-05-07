@@ -12,64 +12,24 @@ It is built using **Gradio**, an interactive Python library for creating UIs, an
 
 ---
 
-## 🚀 How to Run the Chatbot Locally
+## Setup Guide
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://huggingface.co/spaces/your-space-name
-🛠️ Tech Stack
-Component	Purpose
-Gradio	Interactive UI and chat history management
-Groq API	NLP responses and intelligent answer generation
-Python	Core logic and API handling
-📝 Architecture
-User Query: Inputs question (e.g., "Next train timing?")
+### Step 1: Get Your Groq API Key
+- Sign up at [Groq Console](https://console.groq.com) and generate an API key.
 
-System Prompt: Defines chatbot's travel-assistant role
+### Step 2: Set Up the Project
+- Clone the repository.
+- Create `app.py` and `requirements.txt` files.
 
-API Interaction: Queries Groq with user input
+### Step 3: Install Dependencies
+- Run `pip install -r requirements.txt`.
 
-Response: Displays API-generated answer in UI
+### Step 4: Set the API Key
+- Add your **Groq API key** to Hugging Face Space **Secrets**.
 
-💡 UI Features
-Topic Dropdown: Pre-select categories (Ticketing, Schedules, etc.)
+### Step 5: Run the Chatbot
+- Run `python app.py` locally or deploy it on **Hugging Face**.
 
-Persistent Chat History: Continuous conversation tracking
+## Deployment
+- Once deployed on Hugging Face, access the chatbot using the provided link.
 
-Clear Chat Button: Conversation reset option
-
-🔑 API Setup
-Obtain key from Groq Console
-
-Configure either:
-
-Environment variable: GROQ_API_KEY
-
-Hugging Face Secrets (for Spaces deployment)
-
-🚀 Deployment (Hugging Face)
-Create new Gradio Space
-
-Upload:
-
-app.py
-
-requirements.txt
-
-Add API key in Settings > Secrets
-
-Deploy!
-
-📋 Roadmap
-Enhanced station details
-
-Improved NLP accuracy
-
-Real-time schedule integration
-
-Delay notifications
-
-🔗 Resources
-Hugging Face Space
-
-Groq API Documentation
